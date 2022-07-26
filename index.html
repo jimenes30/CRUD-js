@@ -21,7 +21,7 @@
 
     <main class="principal">
       <button id="cadastrarCliente" class="botao azul mobile">Cadastrar Cliente</button>
-      <table class="registros">
+      <table id="tableClient" class="registros">
         <thead>
           <tr>
             <th>Nome</th>
@@ -32,7 +32,7 @@
           </tr>
         </thead>
         <tbody>
-          <tr>
+          <!-- <tr>
             <td>maria</td>
             <td>maria@gmail.com</td>
             <td>(11) 97165-1111</td>
@@ -61,7 +61,7 @@
               <button class="botao verde" type="button">editar</button>
               <button class="botao vermelho" type="button" >excluir</button>
             </td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
     </main>
@@ -71,15 +71,15 @@
             <h2>Novo Cliente</h2>
             <span class="modal-close" id="modalClose">&#10006;</span>
         </header>
-        <form class="modal-form">
-            <input type="text" class="modal-field" placeholder="Nome do Cliente">
-            <input type="email" class="modal-field" placeholder="e-mail do Cliente">
-            <input type="text" class="modal-field" placeholder="Celular do Cliente">
-            <input type="text" class="modal-field" placeholder="Cidade do Cliente">
+        <form id="form" class="modal-form">
+            <input id="nome" data-index="new" type="text" class="modal-field" placeholder="Nome do Cliente" required>
+            <input id="email" type="email" class="modal-field" placeholder="e-mail do Cliente" required>
+            <input id="celular" type="text" class="modal-field" placeholder="Celular do Cliente" required>
+            <input id="cidade" type="text" class="modal-field" placeholder="Cidade do Cliente" required>
         </form>
         <footer class="modal-footer">
-            <button class="botao verde">Salvar</button>
-            <button class="botao azul">Cancelar</button>
+            <button id="salvar" class="botao verde">Salvar</button>
+            <button id="cancelar" class="botao azul">Cancelar</button>
         </footer>
       </div>
   </div>
